@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+   --background-color-light: white;
+   --background-color-dark: black;
+   --color-light: white;
+   --font-family-roboto: "Roboto", sans-serif;
+   --font-size-sm: 1.125rem; /* 18px */
+   --font-size-md: 1.5rem; /* 24px */
+   --font-size-lg: 2.25rem; /* 36px */
+   --font-size-xl: 3rem; /* 48px */
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   font-family: var(--font-family-roboto);
+   color: var(--color-light);
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   min-height: 100vh;
+   background-color: var(--background-color-dark)
+}
+
+header nav {
+   display: flex;
+   justify-content: space-between;
+   height: 4rem;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   border-bottom: 1px solid ghostwhite;
+   padding-left: 8rem;
+   padding-right: 8rem;
+}
+
+header nav h3 {
+   font-size: var(--font-size-md);
+}
+
+header nav ul {
+   display: flex;
+   gap: 1rem
+}
+
+header nav a {
+   font-size: var(--font-size-sm);
+   text-decoration: none;
+}
+
+header .hero {
+   display: flex;
+   justify-content: space-between;
+   gap: 1rem;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   padding-left: 8rem;
+   padding-right: 8rem;
+}
+
+header .hero h1 {
+   font-size: var(--font-size-lg);
+}
+
+header .hero p {
+   font-size: var(--font-size-sm);
+}
+
+header .hero img {
+   height: 10rem;
+   width: 20rem;
+   border: 1px solid white;
+}
+
+main {
+   padding-left: 8rem;
+   padding-right: 8rem;
+}
+
+main .information {
+   padding: 1rem 0;
+   text-align: center;
+}
+
+main .information h2 {
+   font-size: var(--font-size-lg);
+   margin-bottom: 1rem;
+}
+
+main .information .container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 1rem;
+}
+
+main .information .card {
+   height: 13rem;
+   width: 16rem
+}
+
+main .information img {
+   height: 10rem;
+   width: 16rem;
+}
+
+main .quote {
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+}
+
+main .quote p {
+   font-size: var(--font-size-lg);
+   text-align: left;
+}
+
+main .call-to-action {
+   display: flex;
+   justify-content: center;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+}
+
+main .call-to-action > div {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   gap: 1rem;
+   border: 1px solid white;
+   width: calc(100% - 16rem);
+   padding: 1rem;
+}
+
+footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: var(--font-size-sm);
+   height: 4rem;
+   border-top: 1px solid ghostwhite;
+}
